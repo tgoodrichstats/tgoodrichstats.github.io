@@ -1,89 +1,140 @@
- <!--
- __  __  ______  ____    ______   _____   __  __     
-/\ \/\ \/\__  _\/\  _`\ /\__  _\ /\  __`\/\ \/\ \    
-\ \ \ \ \/_/\ \/\ \,\L\_\/_/\ \/ \ \ \/\ \ \ `\\ \   
- \ \ \ \ \ \ \ \ \/_\__ \  \ \ \  \ \ \ \ \ \ , ` \  
-  \ \ \_/ \ \_\ \__/\ \L\ \ \_\ \__\ \ \_\ \ \ \`\ \ 
-   \ `\___/ /\_____\ `\____\/\_____\\ \_____\ \_\ \_\
-    `\/__/  \/_____/\/_____/\/_____/ \/_____/\/_/\/_/
-                                                     
-                                                     
- __  __  ______  ____     __  __         _           
-/\ \/\ \/\  _  \/\  _`\  /\ \/\ \      /' \          
-\ \ \_\ \ \ \L\ \ \ \/\_\\ \ \/'/'    /\_, \         
- \ \  _  \ \  __ \ \ \/_/_\ \ , <     \/_/\ \        
-  \ \ \ \ \ \ \/\ \ \ \L\ \\ \ \\`\      \ \ \       
-   \ \_\ \_\ \_\ \_\ \____/ \ \_\ \_\     \ \_\      
-    \/_/\/_/\/_/\/_/\/___/   \/_/\/_/      \/_/     
-    
-I made this website at https://www.hacker.fund/vh1/
--->    
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>        
-        <title>Tybron Goodrich</title> <!-- TODO: Replace with your name -->
-        <meta name="author" content="Tybron Goodrich" /> <!-- TODO: Replace with your name -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ty Goodrich — Resume Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <meta charset="utf-8" />
-        <meta name="robots" content="index, follow" />
-        <meta name="description" content="My Personal Website" />
+  <!-- Background canvas -->
+  <canvas id="court-bg"></canvas>
 
-        <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 18px;
-            line-height: 1.6;
-            color: rgb(218, 218, 219);
-            background: rgb(39, 81, 96); /* TODO: Replace with your favorite color */
-            margin: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            text-align: center;
-        }
-        .main {
-            max-width: calc(600px + 48px);
-            padding: 24px;
-        }
-        h1 {
-            line-height: 1.2;
-            margin: 0;
-            padding: 12px 0;
-        }
-        a {
-            text-decoration: none;
-            color: rgb(218, 218, 219);
-        }
-        img {
-            border-radius: 50%;
-            width: 250px;
-            height: 250px;
-        }
-        .buttons {
-            display: flex;
-            justify-content: center;
-        }
-        .button {
-            background: rgb(65, 66, 68);
-            border-radius: 8px;
-            margin: 8px;
-            padding: 6px 14px;
-        }
-        </style>
-    </head>
-    <body>
-        <main class="main">
-            <img src="photo.jpg" alt="A profile picture of me" draggable="false" />
-            <h1>Tybron Goodrich</h1> <!-- TODO: Replace with your name -->
-            <span>
-                I am  <b>somewhat employed </b> with interests in 
-                basketball anlytics, frozen mango, and raised bedding! Have a great day :D <!-- TODO: Replace with your interests -->
-            </span>
-            <div class="buttons">
-                <a class="button" href="resume.pdf" title="Resume">Resume</a>
-            </div>
-        </main>
-    </body>
+  <!-- Header -->
+  <header>
+    <div class="left">
+      <img src="your-photo.png" alt="Ty Goodrich" class="avatar">
+      <h1>Ty Goodrich</h1>
+    </div>
+    <nav>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#community">Community & Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Me -->
+    <section id="about" class="reveal">
+      <h2>About Me</h2>
+      <div class="divider"></div>
+      <div class="card reveal">
+        <p>
+          Hi, I'm Ty! I mix <strong> sports, social science, and analytics</strong> to make sense of numbers without forgetting about the humans behind the datapoints. 
+        </p>
+      </div>
+    </section>
+  
+    <!-- Education -->
+    <section id="education" class="reveal">
+      <h2>Education</h2>
+      <div class="divider"></div>
+      <div class="card reveal">
+        <h3>University of Southern California</h3>
+        <p class="dates">2021 - 2024</p>
+        <ul>
+          <li>Bachelor of Arts: Sociology</li>
+          <li>Bachelor of Arts: Social Sciences with an emphasis in Psychology</li>
+          <li>Cum Laude Honors</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>Maastricht University (Study Abroad)</h3>
+        <p class="dates">Jan 2023 - Jun 2023</p>
+      </div>
+      <div class="card reveal">
+        <h3>Sports Business Classroom — Certification in Scouting, Video & Analytics</h3>
+        <p class="dates">Jul 2023  </p>
+      </div>
+    </section>
+  
+    <!-- Work Experience -->  
+    <section id="experience" class="reveal">
+      <h2>Work Experience</h2>
+      <div class="divider"></div>
+
+      <div class="card reveal">
+        <h3>Somethings Mentorship — Peer Support Specialist</h3>
+        <p class="dates">Jan 2025 - Present</p>
+        <ul>
+          <li>Provide support and mentorship for teens experiencing anxiety, low self-esteem, and loneliness</li>
+          <li>Certification received from the NY Peer Specialist Certification Board</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3>Mortal Media — Development & Production Intern</h3>
+        <p class="dates">Jul 2024 - Jan 2025</p>
+        <ul>
+          <li>Evaluate incoming material for film/TV projects for Blake Griffin & Ryan Kalil’s production company (first-look deal at Sony)</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3>Duetti Inc. — Music Data Analyst</h3>
+        <p class="dates">Aug 2024 - Jan 2025</p>
+        <ul>
+          <li>Track and extract streaming data for 400+ artists to determine growth and marketing efficacy</li>
+          <li>Research music trends to optimize campaigns and monetization</li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <h3>Accelerated Behavioral Change Inc. — Behavioral Therapist</h3>
+        <p class="dates">Oct 2023 - Apr 2024</p>
+        <ul>
+          <li>Worked with children aged 4-18 at their homes to address behavioral concerns</li>
+          <li>Facilitated interactions between families and program supervisors</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Community & Skills -->
+    <section id="community" class="reveal">
+      <h2>Community Involvement & Skills</h2>
+      <div class="divider"></div>
+
+      <div class="card reveal">
+        <ul>
+          <li>Skills: Python (intermediate) | R (intermediate) | SPSS (intermediate)</li>
+          <li>Los Angeles Homeless Count — Surveyor (2023-2024)</li>
+          <li>NLSLA — Assisted litigants with eviction notices, restraining orders, and domestic violence (2022)</li>
+          <li>Member of Sports Business Association and Sports Analytics Club (2022-2024)</li>
+          <li>USC Club Baseball Player (2021-2022)</li>
+          <li>AEG (Staples Center) — Guest services (2021)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="reveal">
+      <h2>Contact</h2>
+      <div class="divider"></div>
+      <div class="card reveal">
+        <p>Email: <a href="mailto:tgoodrich012@gmail.com">tgoodrich012@gmail.com</a></p>
+        <p>Phone: (818) 645-5421</p>
+        <p>Location: Los Angeles, California</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Ty Goodrich. All rights reserved.
+  </footer>
+
+  <!-- JS for animations and background -->
+  <script src="script.js"></script>
+</body>
 </html>
